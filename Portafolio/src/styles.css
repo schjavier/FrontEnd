@@ -1,0 +1,355 @@
+/* You can add global styles to this file, and also import other style files */
+html{
+    background-color: #000000;
+    scroll-behavior: smooth;}
+    
+    body {
+        background-color: #000000 !important;
+        font-family:bubblegum Sans!important;
+    }
+    
+    header {background-color: BLACK;}
+    
+    
+    /* estilos de header */
+    img.img-header {
+    background-color: BLACK;
+    width:100px;
+    height:75px;
+    margin-top:10px;
+    }
+    
+    header h6 {
+    padding-top:2.5rem;
+    color:white;
+    
+    
+    }
+    button.editar{
+        background-color:white;
+
+    }
+
+    button.editar:hover{
+        background-color:#800080;
+
+    }
+    .social a {
+    padding: 10px 10px;
+    margin-right: 5px; 
+    
+    }
+    
+    /* estilos de banner */
+    .banner {
+    background-color:#000000;
+    z-index:1;
+    }
+    
+    .img-banner {
+    max-width:100%;
+    height:auto;
+    }
+    
+    
+    
+    /* estilos de sobre-banner */
+    
+    .img-self {
+    border-radius:100%;
+    max-width:100%;
+    height:auto;
+    
+    }
+    
+    #sobre-banner{
+    position:relative;
+    top:-150px;
+    z-index:2;
+    }
+    
+    #nombre{
+    color:white;
+    text-align:right;
+    margin-top:50px;
+    font-size: 50px;
+    
+    }
+    
+    p {
+    text-align:right;
+    color:white;
+    font-size: 25px;
+    
+    }
+    
+    /* estilos de section */
+    
+    section.experiencia{
+    position:relative;
+    top:-100px;
+    background-color: #000000;
+    
+    }
+    
+    section p {
+    
+    text-align:center;
+    color:white;
+    font-size:20px;
+    }
+    
+    section h3 {
+    color:white;
+    
+    text-align:center;
+    /**font-size:35px;**/
+    }
+    
+    section h4 {
+    color:white;
+    
+    text-align:justify;
+    /**font-size:25px;**/
+    }
+    
+    .img-exp {
+    max-width:100%;
+    height:auto;
+    margin-top:20px;
+    border-radius:15px 0px 15px 0px;
+    
+    }
+    
+    .empresa{
+    text-align: left;
+    
+    }
+    
+    .educacion{
+    text-align:left;
+    }
+    
+    .img-edu {
+    max-width:100%;
+    max-height:50%;
+    margin-top:20px;
+    
+    }
+    
+    .proyecto {
+        position:relative;
+        top:20px;
+    
+    }
+    /** comienzo de estilo de barras de progreso de skills **/
+    
+    .skills{
+    padding-top:30px;
+    
+    }
+    
+    .circular-progress{
+    width:12rem;
+    height:12rem;
+    background:linear-gradient(0deg, #fff 50%, #800080 50%);
+    border-radius:50%;
+    margin:auto;
+    position:relative;
+    transform: rotate(90deg);
+    }
+    
+    .circular-progress::before {
+    width:12rem;
+    height:12rem;
+    position:absolute;
+    top:0;
+    left:0;
+    background:#000 content-box;
+    content:"Html5";
+    border-radius:50%;
+    padding:.5em;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    color:#fff;
+    text-align:center;
+    line-height:8rem;
+    transform:rotate(-90deg);
+    
+    }
+    
+    .circular-progress::after{
+    width:12rem;
+    height:12rem;
+    position:absolute;
+    top:0;
+    left:0;
+    background:#000;
+    content:"50%";
+    border-radius:50%;
+    background:linear-gradient(
+        transparent 50%,
+        #000 50%
+    );
+    transform:scale(1.1) rotate(-90deg);
+    text-align:center;
+    color:#fff;
+    line-height: 13rem;
+    }
+    
+    /* barra de progreso 2 */
+    .circular-progress2{
+        width:12rem;
+        height:12rem;
+        background:linear-gradient(0deg, #fff 50%, #800080 50%);
+        border-radius:50%;
+        margin:auto;
+        position:relative;
+        transform: rotate(81deg);
+        }
+        
+        .circular-progress2::before {
+        width:12rem;
+        height:12rem;
+        position:absolute;
+        top:0;
+        left:0;
+        background:#000 content-box;
+        content:"CSS";
+        border-radius:50%;
+        padding:.5em;
+        box-sizing: border-box;
+        font-size: 1.5rem;
+        color:#fff;
+        text-align:center;
+        line-height:8rem;
+        transform:rotate(-81deg);
+        
+        }
+        
+        .circular-progress2::after{
+        width:12rem;
+        height:12rem;
+        position:absolute;
+        top:0;
+        left:0;
+        background:#000;
+        content:"45%";
+        border-radius:50%;
+        background:linear-gradient(
+            transparent 50%,
+            #000 50%
+        );
+        transform:scale(1.1) rotate(-81deg);
+        text-align:center;
+        color:#fff;
+        line-height: 13rem;
+        }
+    
+        /* barra de progreso 3 */
+        .circular-progress3{
+            width:12rem;
+            height:12rem;
+            background:linear-gradient(0deg, #fff 50%, #800080 50%);
+            border-radius:50%;
+            margin:auto;
+            position:relative;
+            transform: rotate(117deg);
+            }
+            
+            .circular-progress3::before {
+            width:12rem;
+            height:12rem;
+            position:absolute;
+            top:0;
+            left:0;
+            background:#000 content-box;
+            content:"Javascript";
+            border-radius:50%;
+            padding:.5em;
+            box-sizing: border-box;
+            font-size: 1.5rem;
+            color:#fff;
+            text-align:center;
+            line-height:8rem;
+            transform:rotate(-117deg);
+            
+            }
+            
+            .circular-progress3::after{
+            width:12rem;
+            height:12rem;
+            position:absolute;
+            top:0;
+            left:0;
+            background:#000;
+            content:"65%";
+            border-radius:50%;
+            background:linear-gradient(
+                transparent 50%,
+                #000 50%
+            );
+            transform:scale(1.1) rotate(-117deg);
+            text-align:center;
+            color:#fff;
+            line-height: 13rem;
+            }
+            
+    /* barra de progreso 4 */
+    
+    .circular-progress4{
+        width:12rem;
+        height:12rem;
+        background:linear-gradient(0deg, #fff 50%, #800080 50%);
+        border-radius:50%;
+        margin:auto;
+        position:relative;
+        transform: rotate(45deg);
+        }
+        
+        .circular-progress4::before {
+        width:12rem;
+        height:12rem;
+        position:absolute;
+        top:0;
+        left:0;
+        background:#000 content-box;
+        content:"TypeScript";
+        border-radius:50%;
+        padding:.5em;
+        box-sizing: border-box;
+        font-size: 1.5rem;
+        color:#fff;
+        text-align:center;
+        line-height:8rem;
+        transform:rotate(-45deg);
+        
+        }
+        
+        .circular-progress4::after{
+        width:12rem;
+        height:12rem;
+        position:absolute;
+        top:0;
+        left:0;
+        background:#000;
+        content:"25%";
+        border: radius 50%;
+        background:linear-gradient(
+            transparent 50%,
+            #000 50%
+        );
+        transform:scale(1.1) rotate(-45deg);
+        text-align:center;
+        color:#fff;
+        line-height: 13rem;
+        }
+        
+    
+    /* Comienzo Estilo de Modal Login */
+    
+    .login-footer {
+        justify-content: center !important;
+    }
+    
+    
