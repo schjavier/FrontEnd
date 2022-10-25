@@ -1,0 +1,39 @@
+{
+    "nombre":"Javier Schettini",
+    "fotoDePerfil":"assets/selfie.jpg.jpg",
+    "puesto":"Full Stack Developer Junior",
+    "fondoBanner":"assets/atardecer.jpg",
+    "acercaDeMi":{
+        "encabezado": "Acerca de mi",
+        "descripcion": ":)"
+    },
+    "experiencia": [
+        {
+         
+         "imgEmpresa":"assets/Rs.jpeg",
+         "puesto" :"IT Technician - Web Admin",
+         "anioComienzo":"2015",
+         "anioFinal":"2017",
+         "descripcion" : "Diagnostico de problemas informáticos, supervisor de sistemas de procesamiento, instalar software, ademas de realizar pruebas en equipos y programas informáticos. Modificaciones de paginas web empresariales"
+        }
+    ],
+    "educacion":[
+        {
+         
+         "imgInstitucion":"assets/fceia.png",
+         "titulo":"Licenciatura en Ciencias de la Computación [2015 - 2016]",
+         "anioComienzo":"2015",
+         "anioFinal":"2016",
+         "descripcion":"Primer año de la carrera de LCC, materias cursadas: programacion, análisis matemático y álgebra."
+        }
+    ],
+    "proyectos":[
+        {
+            "imgProjecto":"",
+            "titulo":"",
+            "anio":"",
+            "descripcion":""
+
+        }]
+
+}
