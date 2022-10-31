@@ -7,21 +7,18 @@
           </div>	
         </div>
       </div>
-    
+      <li *ngFor="let experience of experienceList">
       <div class="container">
         <div class="row">
-          <div class="col-sm-3"><a href="https://rosariosolutions.com"><img class="img-fluid img-exp" src="assets/Rs.jpeg" alt="Rosario Solutions Logo"></a></div>
+          <div class="col-sm-3"><a href="https://rosariosolutions.com"><img class="img-fluid img-exp" [src]="experience.imgEmpresa" alt="Rosario Solutions Logo"></a></div>
           <div class="col-sm-8">
-            <h4><b>IT Technician - Web Admin </b><small> [2015 - 2017]</small></h4>
-              <p class="empresa">Diagnóstico de problemas informáticos, 
-            supervisor de sistemas de procesamiento, instalar software, además realizar 
-            pruebas en equipos y programas informáticos.<br>
-            Modificaciones de paginas web empresariales.				
-            </p>
+            <h4><b>{{experience.puesto}}</b><small> {{experience.anioComienzo}} - {{experience.anioFinal}}</small></h4>
+              <p class="empresa">{{experience.descripcion}}</p>
           </div>
           <div class="col-sm-1">
             <button class="btn bi bi-pencil editar"></button>
           </div>
         </div>
       </div>
+    </li>
 </section>
