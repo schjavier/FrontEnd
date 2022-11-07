@@ -3,10 +3,7 @@
     "fotoDePerfil":"assets/selfie.jpg.jpg",
     "puesto":"Full Stack Developer Junior",
     "fondoBanner":"assets/atardecer.jpg",
-    "acercaDeMi":{
-        "encabezado": "Acerca de mi",
-        "descripcion": ":)"
-    },
+    "acercaDeMi":"Acerca de Mi :)",
     "experiencia": [
         {
          
@@ -29,10 +26,10 @@
     ],
     "proyectos":[
         {
-            "imgProjecto":"",
-            "titulo":"",
-            "anio":"",
-            "descripcion":""
+            "imgProyecto":"assets/project1.png",
+            "titulo":"Portafolio",
+            "anio":"2022",
+            "descripcion":"Portafolio creado como trabajo final integrador de curso Argentina Programa 3.0 Desarrollado como SPA utlizando el framework Angular"
 
         }]
 

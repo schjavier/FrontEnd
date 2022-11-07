@@ -1,17 +1,23 @@
 <section>
     <div class="container proyecto">
         <div class="row">
-          <div class="col-sm-11"><h3>Proyectos</h3></div>
-            <div class="col-sm-1">
-              <button class="btn bi bi-pencil editar"></button>
-            </div>
+          <div class="col-sm-12"><h3>Proyectos</h3></div>
+            
         </div>
       </div>
+      <li *ngFor="let projects of projectsList">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-3"></div>
-          <div class="col-sm-8"></div>
-          <div class="col-sm-1"></div>
+        <div class="row"> 
+          <!-- falta resolver que muestre la imagen -->
+          <div class="col-sm-3"><img class="img-fluid" [src]="projects.imgProyecto" alt="imagen Portafolio"></div>
+           <div class="col-sm-8">
+            <h4><strong>{{projects.titulo}} <small>{{projects.anio}}</small></strong> </h4>
+            <p>{{projects.descripcion}}</p>
+          </div>
+             <div class="col-sm-1">
+               <button class="btn bi bi-pencil editar"></button>
+             </div>
+           </div>
         </div>
-      </div> 
+      </li> 
 </section>
