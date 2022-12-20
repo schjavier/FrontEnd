@@ -11,6 +11,8 @@ import { EducationComponent } from './components/education/education.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { AppRoutingModule } from './app-routing.module';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
 
 
 @NgModule({
@@ -23,11 +25,13 @@ import { FooterComponent } from './components/footer/footer.component';
     EducationComponent,
     SkillsComponent,
     ProjectsComponent,
-    FooterComponent
+    FooterComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
