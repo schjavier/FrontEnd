@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 html{
-    background-color: #000000;
+    background-color: #131313;
     scroll-behavior: smooth;}
     
     body {
@@ -144,207 +144,17 @@ html{
     }
     /** comienzo de estilo de barras de progreso de skills **/
     
-    .skills{
+    .skills {
     padding-top:30px;
     
     }
     
-    .circular-progress{
-    width:12rem;
-    height:12rem;
-    background:linear-gradient(0deg, #fff 50%, #800080 50%);
-    border-radius:50%;
-    margin:auto;
-    position:relative;
-    transform: rotate(90deg);
-    }
-    
-    .circular-progress::before {
-    width:12rem;
-    height:12rem;
-    position:absolute;
-    top:0;
-    left:0;
-    background:#000 content-box;
-    content:"Html5";
-    border-radius:50%;
-    padding:.5em;
-    box-sizing: border-box;
-    font-size: 1.5rem;
-    color:#fff;
-    text-align:center;
-    line-height:8rem;
-    transform:rotate(-90deg);
-    
-    }
-    
-    .circular-progress::after{
-    width:12rem;
-    height:12rem;
-    position:absolute;
-    top:0;
-    left:0;
-    background:#000;
-    content:"50%";
-    border-radius:50%;
-    background:linear-gradient(
-        transparent 50%,
-        #000 50%
-    );
-    transform:scale(1.1) rotate(-90deg);
-    text-align:center;
-    color:#fff;
-    line-height: 13rem;
-    }
-    
-    /* barra de progreso 2 */
-    .circular-progress2{
-        width:12rem;
-        height:12rem;
-        background:linear-gradient(0deg, #fff 50%, #800080 50%);
-        border-radius:50%;
-        margin:auto;
-        position:relative;
-        transform: rotate(81deg);
+    .skills h4 {
+        padding-bottom:10px;
+        text-align: center;
         }
-        
-        .circular-progress2::before {
-        width:12rem;
-        height:12rem;
-        position:absolute;
-        top:0;
-        left:0;
-        background:#000 content-box;
-        content:"CSS";
-        border-radius:50%;
-        padding:.5em;
-        box-sizing: border-box;
-        font-size: 1.5rem;
-        color:#fff;
-        text-align:center;
-        line-height:8rem;
-        transform:rotate(-81deg);
-        
-        }
-        
-        .circular-progress2::after{
-        width:12rem;
-        height:12rem;
-        position:absolute;
-        top:0;
-        left:0;
-        background:#000;
-        content:"45%";
-        border-radius:50%;
-        background:linear-gradient(
-            transparent 50%,
-            #000 50%
-        );
-        transform:scale(1.1) rotate(-81deg);
-        text-align:center;
-        color:#fff;
-        line-height: 13rem;
-        }
-    
-        /* barra de progreso 3 */
-        .circular-progress3{
-            width:12rem;
-            height:12rem;
-            background:linear-gradient(0deg, #fff 50%, #800080 50%);
-            border-radius:50%;
-            margin:auto;
-            position:relative;
-            transform: rotate(117deg);
-            }
-            
-            .circular-progress3::before {
-            width:12rem;
-            height:12rem;
-            position:absolute;
-            top:0;
-            left:0;
-            background:#000 content-box;
-            content:"Javascript";
-            border-radius:50%;
-            padding:.5em;
-            box-sizing: border-box;
-            font-size: 1.5rem;
-            color:#fff;
-            text-align:center;
-            line-height:8rem;
-            transform:rotate(-117deg);
-            
-            }
-            
-            .circular-progress3::after{
-            width:12rem;
-            height:12rem;
-            position:absolute;
-            top:0;
-            left:0;
-            background:#000;
-            content:"65%";
-            border-radius:50%;
-            background:linear-gradient(
-                transparent 50%,
-                #000 50%
-            );
-            transform:scale(1.1) rotate(-117deg);
-            text-align:center;
-            color:#fff;
-            line-height: 13rem;
-            }
-            
-    /* barra de progreso 4 */
-    
-    .circular-progress4{
-        width:12rem;
-        height:12rem;
-        background:linear-gradient(0deg, #fff 50%, #800080 50%);
-        border-radius:50%;
-        margin:auto;
-        position:relative;
-        transform: rotate(45deg);
-        }
-        
-        .circular-progress4::before {
-        width:12rem;
-        height:12rem;
-        position:absolute;
-        top:0;
-        left:0;
-        background:#000 content-box;
-        content:"TypeScript";
-        border-radius:50%;
-        padding:.5em;
-        box-sizing: border-box;
-        font-size: 1.5rem;
-        color:#fff;
-        text-align:center;
-        line-height:8rem;
-        transform:rotate(-45deg);
-        
-        }
-        
-        .circular-progress4::after{
-        width:12rem;
-        height:12rem;
-        position:absolute;
-        top:0;
-        left:0;
-        background:#000;
-        content:"25%";
-        border: radius 50%;
-        background:linear-gradient(
-            transparent 50%,
-            #000 50%
-        );
-        transform:scale(1.1) rotate(-45deg);
-        text-align:center;
-        color:#fff;
-        line-height: 13rem;
-        }
-        
+
+       
     
     /* Comienzo Estilo de Modal Login */
     
