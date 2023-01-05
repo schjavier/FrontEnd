@@ -1,5 +1,5 @@
 //Servicio que se encarga de comunicarse con el backend para traer
-// los datos necsarios 
+// los datos necesarios 
 
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
@@ -9,13 +9,13 @@ import { Persona } from '../model/persona';
 @Injectable({
   providedIn: 'root'
 })
-export class PortfolioService {
+export class PersonaService {
   // guardamos la direccion del host del backend en una variable 
   // de tipo string
  
   url:string='http://localhost:8080/persona/';
   
-  //inyectamos una instancia la clase httpClient 
+  //inyectamos una instancia de la clase httpClient 
   constructor(private http:HttpClient) { }
 
   //metodo que trae los datos de un json guadado en el front
@@ -23,7 +23,8 @@ export class PortfolioService {
     return this.http.get('assets/data/data.json');
   }
   
-  //metodo para traer los datos del backend
+  //metodo para traer los datos de la persona del backend
+  // el 6 es por el id de la persona
   
   getPersona():Observable<Persona>{
     return this.http.get<Persona>(this.url + 'ver/6');
