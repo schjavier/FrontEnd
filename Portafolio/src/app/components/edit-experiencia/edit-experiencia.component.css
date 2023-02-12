@@ -1,0 +1,32 @@
+div.container{
+    margin-top: 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+div.container>div{
+    width: 75%;
+}
+
+label {
+    color:azure;
+
+}
+
+form {
+    width: 100%;
+    height: auto;
+    color:#131313;
+}
+
+button{
+    padding: 10px;
+    margin: 10px 10px 10px 0px;
+    width: auto;
+
+}
+
+input :last-child {
+    margin: 0px 10px 0px 10x;
+}

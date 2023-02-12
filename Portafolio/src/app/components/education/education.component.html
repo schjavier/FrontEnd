@@ -3,22 +3,24 @@
         <div class="row">
           <div class="col-11"><h3>Educación</h3></div>
           <div class="col-sm-1">
-            <button class="btn bi bi-pencil editar"></button>
+            
+            <button class="bi bi-plus-circle-fill agregar" routerLink="/portfolio/educacion/new"></button>
+            
           </div>
         </div>
       </div>
       <li *ngFor="let education of educationList" >
       <div class="container">
         <div class="row">
-          <div class="col-sm-3"><img class="img-fluid img-edu" [src]="education.logo" alt="logo facultad rosario"></div>
-          <div class="col-sm-8" >
-          
-            <h4><strong>{{education.titulo}}</strong><small>[{{education.anioComienzo}}-{{education.anioFinal}}]</small></h4>
-    
-            <p class="educacion">{{education.descripcion}}</p>					
-           
-          </div>
-          
+            <div class="col-sm-3"><img class="img-fluid img-edu" [src]="education.logo" alt="imagen Educacion"></div>
+            <div class="col-sm-8" >
+                <h4><strong>{{education.titulo}}</strong><small>[{{education.anioComienzo}}-{{education.anioFinal}}]</small></h4>
+                <p class="educacion">{{education.descripcion}}</p>					
+            </div>
+            <div class="col-sm-1">
+                <button class="btn bi bi-pencil editar" routerLink="/portfolio/educacion/edit/{{education.id}}"></button>
+                <button class="btn editar bi bi-x-circle" (click)="onDelete(education.id)"></button>
+            </div>
         </div>
       </div>
     </li>

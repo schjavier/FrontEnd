@@ -1,6 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
+/* estilo global del portfolio */
 html{
-    background-color: #131313;
+    background-color: #000000;
     scroll-behavior: smooth;}
     
     body {
@@ -23,17 +23,30 @@ html{
     padding-top:2.5rem;
     color:white;
     
-    
+    /* estilos de botones */
     }
+    button.agregar{
+        color:white;
+        background-color: #000000;
+    }
+    
+    button.agregar:hover{
+        color:rgb(211, 135, 11);
+        background-color: #000000;
+    }
+
     button.editar{
-        background-color:white;
+        color:white;
 
     }
 
     button.editar:hover{
-        background-color:#800080;
+        color:rgb(211, 135, 11);
 
     }
+
+    /* fin estilos de botones */
+    
     .social a {
     padding: 10px 10px;
     margin-right: 5px; 

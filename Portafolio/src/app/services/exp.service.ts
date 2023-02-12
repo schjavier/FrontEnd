@@ -3,6 +3,8 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { experiencia } from '../model/experiencia';
 
+
+
 @Injectable({
   providedIn: 'root'
 })
@@ -12,8 +14,25 @@ export class ExpService {
 
   constructor(private http:HttpClient) { }
 
-  getExp():Observable<experiencia>{
+  public getExp():Observable<experiencia>{
     return this.http.get<experiencia>(this.url + '/ver');
     }
+
+  public detalle(id: number):Observable<experiencia>{
+    return this.http.get<experiencia>(this.url + `/ver/${id}`);
+  }
+
+  public saveExperiencia(exp:experiencia):Observable<any>{
+    return this.http.post<any>(this.url + `/new`, exp);
+  }
+
+  public updateExperiencia(id:number, exp:experiencia):Observable<any>{
+    return this.http.put<any>(this.url + `/editar/${id}`, exp)
+  }
+
+  public deleteExperiencia(id:number):Observable<any>{
+    return this.http.delete<any>(this.url + `/borrar/${id}`);
+  }
+
   
 }

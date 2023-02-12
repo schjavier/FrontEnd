@@ -14,10 +14,27 @@ export class ExperienceComponent implements OnInit {
   constructor(private datosExperiencia:ExpService) { }
 
   ngOnInit(): void {
+    this.cargarExperiencia();
+
+  }
+
+  cargarExperiencia():void{
     this.datosExperiencia.getExp().subscribe(data => {
       this.experienceList=data;
     });
-
   }
+
+  onDelete(id?: number){
+    if(id != undefined) {
+      this.datosExperiencia.deleteExperiencia(id).subscribe(
+        data => {
+          this.cargarExperiencia();
+        }, err => {
+          alert("rayos! No se pudo borrar la entrada!");
+        }
+      )
+    }
+  }
+
 
 }
