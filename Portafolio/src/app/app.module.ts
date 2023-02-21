@@ -21,6 +21,7 @@ import { NewProjectosComponent } from './components/new-projectos/new-projectos.
 import { EditProjectosComponent } from './components/edit-projectos/edit-projectos.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,8 +39,8 @@ import { EditProjectosComponent } from './components/edit-projectos/edit-project
     NewExperienciaComponent,
     EditExperienciaComponent,
     NewProjectosComponent,
-    EditProjectosComponent
-  ],
+    EditProjectosComponent,
+    ],
   imports: [
     BrowserModule,
     HttpClientModule,
