@@ -8,10 +8,10 @@ html{
         font-family:bubblegum Sans!important;
     }
     
-    header {background-color: BLACK;}
-    
-    
     /* estilos de header */
+    
+    header {background-color: BLACK;}
+        
     img.img-header {
         background-color: BLACK;
         width:100px;
@@ -19,10 +19,22 @@ html{
         margin-top:10px;
     }
     
-    .social a {
+    .navbar-nav{
+        flex-direction: row !important;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .social{
+        display: flex;
+        gap:15px;
+    }
+
+    .socialItem {
     padding: 10px 10px;
-    margin-right: 5px; 
+    margin-right: 5px;
     
+        
     }
     
     header h6 {
@@ -126,7 +138,15 @@ html{
     text-align:justify;
     /**font-size:25px;**/
     }
+
+    small {
+        color:deeppink;
+    }
     
+    .tituloEmpresa{
+        color:rgb(211, 135, 11);
+    }
+
     .img-exp {
     max-width:100%;
     height:auto;
@@ -140,6 +160,10 @@ html{
     
     }
     
+    .nombreEducacion{
+        color:rgb(211, 135, 11)
+    }
+
     .educacion{
     text-align:left;
     }
@@ -170,22 +194,15 @@ html{
 
        
     
-    /* Comienzo Estilo de Modal Login */
-    
-    .login-footer {
-        justify-content: center !important;
-    }
-    
     /* mediaqueries */
-
+    
+    /* pantallas pequeñas */
     @media only screen and (max-width: 600px) {
         
         .img-self {
             display:none;
         }
-        header h6 {
-            padding-top: 0px;
-        }
+       
         #nombre{
             color:white;
             text-align:center;
@@ -200,5 +217,15 @@ html{
             font-size: 15px;
         }
 
+        .img-exp {
+            display: none;            
+        }
+
+        .img-edu{
+            display: none;
+        }
+
+       
+       
       }
     

@@ -1,9 +1,18 @@
 .logos {
-    width:100px;
-    height:100px;
+    width:75px;
+    height:75px;
     
 }
 
 .logos:hover{
-    transform: scale(1.5) rotate(20deg);
+    rotate:(25deg);
+    transform: scale(1.3);
+    }
+
+.hab{
+    display: flex;
+    gap:20px;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }

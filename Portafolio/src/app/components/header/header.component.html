@@ -5,12 +5,12 @@
         <li class="nav-item"><h6>#Yo Programo</h6></li>
       </ul>
       <ul class="social nav navbar-nav navbar-right">	
-        <li class="nav-item"><a href="https://www.instagram.com"><i class="bi bi-instagram" style="color:white"></i></a></li>
-        <li class="nav-item"><a href="https://www.github.com/schjavier"><i class="bi bi-github" style="color:white"></i></a></li>
+        <li class="nav-item socialItem"><a href="https://www.instagram.com"><i class="bi bi-instagram" style="color:white"></i></a></li>
+        <li class="nav-item socialItem"><a href="https://www.github.com/schjavier"><i class="bi bi-github" style="color:white"></i></a></li>
         
         
-        <li class="nav-item logIn" ><a routerLink="/portfolio/auth/login" *ngIf="!isLogged" data-toggle="tooltip" data-placement="bottom" title="Acceder"><i class="bi bi-door-open" style="color:white"></i></a></li>
-        <li class="nav-item LogOut"><a routerLink="/portfolio" *ngIf="isLogged" data-toggle="tooltip" data-placement="bottom" title="Salir" (click)="onLogOut()"><i class="bi bi-door-closed" style="color:white"></i></a></li>
+        <li class="nav-item logIn socialItem" ><a routerLink="/portfolio/auth/login" *ngIf="!isLogged" data-toggle="tooltip" data-placement="bottom" title="Acceder"><i class="bi bi-door-open" style="color:white"></i></a></li>
+        <li class="nav-item LogOut socialItem"><a routerLink="/portfolio" *ngIf="isLogged" data-toggle="tooltip" data-placement="bottom" title="Salir" (click)="onLogOut()"><i class="bi bi-door-closed" style="color:white"></i></a></li>
       </ul>
     </div>
 </header>
