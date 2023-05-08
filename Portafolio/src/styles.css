@@ -13,21 +13,28 @@ html{
     
     /* estilos de header */
     img.img-header {
-    background-color: BLACK;
-    width:100px;
-    height:75px;
-    margin-top:10px;
+        background-color: BLACK;
+        width:100px;
+        height:75px;
+        margin-top:10px;
+    }
+    
+    .social a {
+    padding: 10px 10px;
+    margin-right: 5px; 
+    
     }
     
     header h6 {
     padding-top:2.5rem;
     color:white;
+    }
     
     /* estilos de botones */
-    }
     button.agregar{
         color:white;
         background-color: #000000;
+        border: none;
     }
     
     button.agregar:hover{
@@ -46,12 +53,6 @@ html{
     }
 
     /* fin estilos de botones */
-    
-    .social a {
-    padding: 10px 10px;
-    margin-right: 5px; 
-    
-    }
     
     /* estilos de banner */
     .banner {
@@ -89,7 +90,7 @@ html{
     
     }
     
-    p {
+    p.puesto {
     text-align:right;
     color:white;
     font-size: 25px;
@@ -175,4 +176,29 @@ html{
         justify-content: center !important;
     }
     
+    /* mediaqueries */
+
+    @media only screen and (max-width: 600px) {
+        
+        .img-self {
+            display:none;
+        }
+        header h6 {
+            padding-top: 0px;
+        }
+        #nombre{
+            color:white;
+            text-align:center;
+            margin-top:150px;
+            font-size: 40px;
+            
+        }
+            
+        p.puesto {
+            text-align:center;
+            color:white;
+            font-size: 15px;
+        }
+
+      }
     

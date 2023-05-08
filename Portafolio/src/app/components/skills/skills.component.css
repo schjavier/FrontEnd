@@ -1,4 +1,9 @@
-.progress {
-    text-align: center;
+.logos {
+    width:100px;
+    height:100px;
     
+}
+
+.logos:hover{
+    transform: scale(1.5) rotate(20deg);
 }

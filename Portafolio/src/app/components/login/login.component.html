@@ -1,0 +1,46 @@
+<!-- Modal -->
+<!-- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title login-title" id="staticBackdropLabel">LogIn</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body"> -->
+        <!-- formulario de logeo -->
+        <div class="container">
+          <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+            <div class="mb-3">
+              <label for="nombreUsuario" class="form-label">Usuario:</label>
+              <input type="email" id="nombreUsuario" name="nombreUsuario" class="form-control form-control-lg" placeholder="Ingrese usuario" [(ngModel)]="nombreUsuario" required [ngModelOptions]="{standalone: true}" />	
+                <!-- <div *ngIf="Email?.errors && Email?.touched">
+                  <p *ngIf="Email?.hasError('required')" class="text-danger"> 
+                    Este campo es obligatorio.
+                  </p>
+                  <p *ngIf="Email?.hasError('email')" class="text-danger">
+                    El formato debe ser válido.
+                  </p>
+                </div> -->
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Contraseña:</label>
+              <input type="password" class="form-control form-control-lg" id="password" placeholder="Ingrese Password" [(ngModel)]="password" required [ngModelOptions]="{standalone: true}"/>
+              <!-- <div *ngIf="Password?.errors && Password?.touched">
+                <p *ngIf="Password?.hasError('required')" class="text-danger">
+                  Este campo es obligatorio.
+                </p>
+                <p *ngIf="Password?.errors?.['minlength']" class="text-danger">
+                  La Contraseña debe tener mas de 8 caracteres.
+                </p>
+
+              </div> -->
+            </div>
+              <button type="button" class="btn btn-cerrar btn-secondary" routerLink="">Cerrar</button>
+              <button type="submit" class="btn btn-ingresar btn-primary" >Ingresar</button>
+            
+            </form>
+        </div>
+  
+     
+  
+  

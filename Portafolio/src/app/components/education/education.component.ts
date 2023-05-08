@@ -1,5 +1,6 @@
 import { Component, EventEmitter, OnInit, Output} from '@angular/core';
 import { EduService } from 'src/app/services/edu.service';
+import { TokenService } from 'src/app/services/token.service';
 
 @Component({
   selector: 'app-education',
@@ -8,13 +9,20 @@ import { EduService } from 'src/app/services/edu.service';
 })
 export class EducationComponent implements OnInit {
   educationList:any;
+  isLogged = false;
   
 
-  constructor(private datosEducacion:EduService) { }
+  constructor(private datosEducacion:EduService, private tokenService:TokenService) { }
   
 
   ngOnInit(): void {
     this.cargarEducacion();
+    if(this.tokenService.getToken()){
+      this.isLogged = true;
+    } else {
+      this.isLogged = false;
+    }
+
   }
 
   cargarEducacion():void{

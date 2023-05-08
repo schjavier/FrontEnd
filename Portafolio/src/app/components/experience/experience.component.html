@@ -6,7 +6,7 @@
           
           </div>	
           <div class="col-sm-1">
-            <button class="bi bi-plus-circle-fill agregar" routerLink="/portfolio/experiencia/new"></button>
+            <button class="bi bi-plus-circle-fill agregar" routerLink="/portfolio/experiencia/new" *ngIf="isLogged"></button>
             
           </div>
         </div>
@@ -20,8 +20,8 @@
               <p class="empresa">{{experience.descripcion}}</p>
           </div>
           <div class="col-sm-1">
-            <button class="btn bi bi-pencil editar" routerLink="/portfolio/experiencia/edit/{{experience.id}}"></button>
-            <button class="btn editar bi bi-x-circle" (click)="onDelete(experience.id)"></button>
+            <button class="btn bi bi-pencil editar" routerLink="/portfolio/experiencia/edit/{{experience.id}}" *ngIf="isLogged"></button>
+            <button class="btn editar bi bi-x-circle" (click)="onDelete(experience.id)" *ngIf="isLogged"></button>
         </div>
         </div>
       </div>

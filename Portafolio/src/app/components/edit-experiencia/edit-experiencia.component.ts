@@ -24,6 +24,10 @@ export class EditExperienciaComponent implements OnInit {
     )
   }
 
+  updateExp(){
+    this.exp = Object.assign({}, this.exp);
+  }
+
   onUpdate() : void {
     const id = this.activatedRouter.snapshot.params['id'];
     this.expServ.updateExperiencia(id, this.exp).subscribe(
