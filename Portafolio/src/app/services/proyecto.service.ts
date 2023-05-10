@@ -8,7 +8,7 @@ import { Proyectos } from '../model/proyectos';
 })
 export class ProyectoService {
   
-  url:string = 'http://localhost:8080/proyecto';
+  url:string = 'https://portfolio-backend-o7mu.onrender.com/proyecto';
   
   constructor(private http:HttpClient) { }
 

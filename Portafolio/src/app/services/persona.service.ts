@@ -13,7 +13,7 @@ export class PersonaService {
   // guardamos la direccion del host del backend en una variable 
   // de tipo string
  
-  url:string='http://localhost:8080/persona/';
+  url:string='https://portfolio-backend-o7mu.onrender.com/persona/';
   
   //inyectamos una instancia de la clase httpClient 
   constructor(private http:HttpClient) { }
