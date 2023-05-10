@@ -19,15 +19,16 @@ export class PersonaService {
   constructor(private http:HttpClient) { }
 
   //metodo que trae los datos de un json guadado en el front
+  // actualmente en desuso
   obtenerDatos():Observable<any>{
     return this.http.get('assets/data/data.json');
   }
   
   //metodo para traer los datos de la persona del backend
-  // el 6 es por el id de la persona
+  // el 1 es por el id de la persona
   
   getPersona():Observable<Persona>{
-    return this.http.get<Persona>(this.url + 'ver/6');
+    return this.http.get<Persona>(this.url + 'ver/1');
     }
   
 
