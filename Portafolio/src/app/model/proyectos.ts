@@ -6,6 +6,7 @@ export class Proyectos {
     descripcion:string;
     comienzo:string;
     fin:string;
+    
 
     constructor(nombre:string, imagen:string, descripcion:string, comienzo:string, fin:string){
         this.nombre = nombre;
@@ -13,6 +14,7 @@ export class Proyectos {
         this.descripcion = descripcion;
         this.comienzo = comienzo;
         this.fin = fin;
+        
 
 
     }
