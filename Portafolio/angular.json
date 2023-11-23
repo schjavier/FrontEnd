@@ -52,7 +52,13 @@
               ],
               "outputHashing": "all"
             },
-            "development": {
+            "dev": {
+              "fileReplacements": [
+              {
+                "replace": "src/environments/environment.ts",
+                "with": "src/environments/environment.dev.ts"
+              }
+            ],
               "buildOptimizer": false,
               "optimization": false,
               "vendorChunk": true,
@@ -69,11 +75,11 @@
             "production": {
               "browserTarget": "Portafolio:build:production"
             },
-            "development": {
-              "browserTarget": "Portafolio:build:development"
+            "dev": {
+              "browserTarget": "Portafolio:build:dev"
             }
           },
-          "defaultConfiguration": "development"
+          "defaultConfiguration": "dev"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",

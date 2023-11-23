@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  uri: 'https://portfolio-backend-o7mu.onrender.com/auth'
 };
